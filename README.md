@@ -14,7 +14,19 @@ Works with Discourse's auto-close feature (e.g., close topics after 7 days of in
 
 ## Installation
 
-SSH into your Discourse instance and install the plugin:
+### Hosted Discourse (Enterprise)
+
+Contact Discourse support and request installation of:
+
+```
+https://github.com/superfly/discourse-closed-topic-gate
+```
+
+They'll clone the plugin and rebuild your instance.
+
+### Self-hosted
+
+SSH into your Discourse instance:
 
 ```bash
 cd /var/www/discourse/plugins
@@ -71,7 +83,7 @@ Now the behavior flips:
 
 **Temporarily:** Set `closed_topic_gate_enabled` to false in Admin → Settings. Takes effect immediately, no restart needed.
 
-**Permanently:** Remove the plugin:
+**Permanently:** Contact Discourse support to remove the plugin (hosted), or for self-hosted:
 
 ```bash
 rm -rf /var/www/discourse/plugins/discourse-closed-topic-gate
