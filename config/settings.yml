@@ -1,0 +1,7 @@
+plugins:
+  closed_topic_gate_enabled:
+    default: true
+    client: false
+  closed_topic_gate_demo_mode:
+    default: true
+    client: false
